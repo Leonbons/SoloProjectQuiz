@@ -15,6 +15,5 @@ namespace SoloProjectQuiz
             Score = 0;
 
         }
-
     }
 }
