@@ -12,6 +12,7 @@ namespace SoloProjectQuiz
         private string Description = "Försök svara så många rätt för att få så mycket poäng som möjligt!";
         private Player CurrentPlayer;
         private Quiz CapitalLeon;
+        private Quiz CountriesLeon;
         
         public Game()
         {
@@ -20,8 +21,8 @@ namespace SoloProjectQuiz
                 CapitalLeon = new Quiz(CapitalQuestion, "true");
 
 
-            string AmountCountriesQuestion = "Hur många länder finns det på jorden? - true or false?";
-
+            string AmountCountriesQuestion = "Finns det exakt 234 länder på jorden? - true or false?";
+            CountriesLeon = new Quiz(AmountCountriesQuestion, "false");
 
         }
         public void Play()
@@ -37,7 +38,8 @@ namespace SoloProjectQuiz
             Console.WriteLine("---------------------------------------------------------");
             CapitalLeon.AskQ();
             Console.WriteLine("---------------------------------------------------------");
-
+            CountriesLeon.AskQ();
+            
 
             Console.WriteLine("\nTryck på en knapp för att avsluta.");
             Console.ReadKey();

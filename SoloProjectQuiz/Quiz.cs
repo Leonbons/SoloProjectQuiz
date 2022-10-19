@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Console;
 
 namespace SoloProjectQuiz
 {
@@ -12,16 +13,16 @@ namespace SoloProjectQuiz
         public Quiz(string leonQuestion, string leonAnswer)
         {
             //Att göra: Ändra så ordningen på svaren och frågan
-            leonAnswer = Answer;
-            leonQuestion = Question; 
+            Question = leonQuestion;
+            Answer = leonAnswer;
         }
         public void AskQ()
         {
             //Visar frågan, ger response
             //Sedan visar det rätta svaret
-
-            Console.WriteLine(Question);
-        
+            WriteLine(Question);
+            Write($"Vad är ditt svar?: ");
+            string PlayerAnswer = ReadLine();
         }
 
 
