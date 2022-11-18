@@ -7,13 +7,13 @@ namespace SoloProjectQuiz
     class Player
     {
         public string Name;
-        public int Score; 
+        public int Score;  
 
-        public Player(string PlayerName)
+        public Player(string PlayerName) //Lagrar spelarens namn och poäng
         {
             Name = PlayerName;
-            Score = 0;
-
+            Score = 0; 
+           
         }
     }
 }
